@@ -1,8 +1,8 @@
-# Fork-only: builds the two container images the homelab deployment runs
+# Homelab-only: builds the two container images the homelab deployment runs
 # (tcorzo/selfhosted services/open-inspect) and pushes them to GHCR.
 #
 #   ghcr.io/tcorzo/open-inspect-control-plane  packages/control-plane/Dockerfile (upstream's)
-#   ghcr.io/tcorzo/open-inspect-web            packages/web/Dockerfile (fork-only)
+#   ghcr.io/tcorzo/open-inspect-web            packages/web/Dockerfile (homelab-only)
 #
 # Every push to `homelab` publishes both as `sha-<full commit sha>`; the
 # homelab compose file pins that tag. `homelab` also moves, for humans only.
