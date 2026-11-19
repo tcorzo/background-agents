@@ -1,0 +1,18 @@
+# BuildKit reads this file in place of the root .dockerignore when building
+# packages/web/Dockerfile. The root package.json and lockfile, every
+# workspace package and scripts/ enter the context (the web type-check reaches
+# into them); build output, dependencies and local env files do not.
+*
+!package.json
+!package-lock.json
+!packages/
+!scripts/
+**/node_modules/
+**/.venv/
+**/__pycache__/
+packages/**/dist/
+packages/**/coverage/
+packages/**/.next/
+packages/**/.open-next/
+packages/**/.wrangler/
+packages/**/.env*
