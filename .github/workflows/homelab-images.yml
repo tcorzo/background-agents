@@ -28,7 +28,7 @@ env:
   REGISTRY: ghcr.io
   OWNER: tcorzo
   WEB_WS_URL: wss://inspect-api.tcorzo.dev
-  WEB_SANDBOX_PROVIDER: daytona
+  WEB_SANDBOX_PROVIDER: modal
   WEB_SCM_PROVIDER: github
 
 jobs:
